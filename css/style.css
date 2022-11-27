@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    font-family: Montserrat-Regular, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../font/Montserrat/static/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('../font/Montserrat/static/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url('../font/Montserrat/static/Montserrat-SemiBold.ttf');
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../font/Montserrat/static/Montserrat-Bold.ttf');
+}
+
+.conteudo-geral {
+    display: grid;
+    grid-template-rows: auto auto 500px;
+    min-height: 100vh;
+    background-color: #d2f0e3;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.wrapper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 62px;
+    padding-top: 5px;
+    background-color: transparent;
+}
+.wrapper-logo img {
+    height: 62px;
+}
+.wrapper-header div, menu {
+    margin: 0 40px;
+}
+.wrapper-header menu {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper-header menu li {
+    padding: 20px;
+    color: #99A0E4;
+    font-family: Montserrat-SemiBold, Arial, Helvetica, sans-serif;
+}
+.wrapper-header menu li:hover {
+    color: #8255ff;
+    cursor: pointer;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    background-color: transparent;
+}
+section {
+    min-height: 500px;
+    background-color: var(--cor);
+}
+
+.introduction {
+    box-shadow: 0px 77px 31px rgba(0, 0, 0, 0.01), 0px 43px 26px rgba(0, 0, 0, 0.05), 0px 19px 19px rgba(0, 0, 0, 0.09), 0px 5px 11px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+.introduction .wrapper-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.introduction .wrapper-titulo h1 {
+    color: #7400f8;
+    font-size: 8em;
+    font-family: Montserrat-Bold, Arial, Helvetica, sans-serif;
+}
+.introduction .wrapper-titulo h3 {
+    color: #43026e;
+    font-size: 4em;
+    font-family: Montserrat-Bold, Arial, Helvetica, sans-serif;
+}
+.introduction .wrapper-backgrond img {
+    width: 100%;
+}
+
+
+
+
+
+.basic-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 700px;
+}
+.basic-information .wrapper-elipseIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 170px;
+
+    height: 250px;
+
+    filter: drop-shadow(53px 53px 30px rgba(0, 0, 0, 0.01)) drop-shadow(30px 30px 25px rgba(0, 0, 0, 0.05)) drop-shadow(13px 13px 19px rgba(0, 0, 0, 0.09)) drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+}
+.basic-information .wrapper-elipseIcons .elipseInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+
+    background: #DFE2FF;
+    border: 15px solid #6039CF;
+    border-radius: 175px;
+}
+.basic-information .wrapper-elipseIcons .elipseInfo  img {
+    width: 140px;
+}
+.basic-information .wrapper-retangleInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 100px;
+
+    height: 250px;
+
+    filter: drop-shadow(53px 53px 30px rgba(0, 0, 0, 0.01)) drop-shadow(30px 30px 25px rgba(0, 0, 0, 0.05)) drop-shadow(13px 13px 19px rgba(0, 0, 0, 0.09)) drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+}
+
+.basic-information .wrapper-retangleInfo .retangleInfo {
+    width: 320px;
+    height: 220px;
+    padding: 8px;
+
+    background: #DFE2FF;
+    border: 15px solid #6039CF;
+    box-shadow: 75px 50px 36px rgba(0, 0, 0, 0.01), 42px 28px 30px rgba(0, 0, 0, 0.05), 19px 12px 22px rgba(0, 0, 0, 0.09), 5px 3px 12px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+.basic-information .wrapper-retangleInfo .retangleInfo h3 {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+footer {
+    background-color: darkblue;
+}
