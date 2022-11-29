@@ -38,7 +38,7 @@ html {
     display: grid;
     grid-template-rows: auto auto auto;
     min-height: 100vh;
-    background-color: #D4DBE5;
+    background-color: #e6e4e4;
 }
 
 
@@ -57,8 +57,8 @@ header {
     align-items: center;
     width: 1200px; height: 60px;
     padding: 5px 50px;
-    background-color: #a67d61f5;
-    border-radius: 20px;
+    background-color: #067876bd;
+    border-radius: 10px;
 }
 .logo {
     display: flex;
@@ -72,20 +72,22 @@ header {
 .logo span{
     font-family: Poppins-Black, Arial, Helvetica, sans-serif;
     font-size: 1.3em;
-    color: #674B3F;
+    color: #fff;
 }
 .listTopics {
     display: flex;
     justify-content: space-between;
 }
 .listTopics li {
+    display: flex;
+    justify-content: center;
     padding: 10px 15px;
     margin: 0 10px;
 }
 .listTopics li, .listTopics a {
-    color: #F1D8BA;
+    color: #fff;
     font-family: Montserrat-SemiBold, Arial, Helvetica, sans-serif;
-    border-radius: 18px;
+    border-radius: 10px;
     text-decoration: none;
     transition: .5s;
 }
@@ -94,6 +96,22 @@ header {
     color: #ffffff;
     cursor: pointer;
 }
+.wrapper-submenu {
+    display: none;
+}
+.listTopics:nth-child(2) li:hover {
+    border-radius: 18px 18px 0px 0px;
+}
+.listTopics li:hover .wrapper-submenu {
+    display: block;
+    position: absolute;
+    width: 140px;
+    margin-top: 25px;
+    background-color: #067876;
+}
+
+
+
 
 main {
     display: flex;
@@ -111,15 +129,11 @@ main {
     width: 1200px; height: 500px;
     margin-top: 13px;
     background-color: #70B6C0;
-    border-radius: 25px;
+    border-radius: 10px;
+    overflow: hidden;
 }
-.introduction h1 {
-    color: #387379;
-    font-size: 8em;
-}
-.introduction h3 {
-    color: #674B3F;
-    font-size: 2em;
+.introduction img {
+    width: 100%;
 }
 
 
@@ -146,7 +160,7 @@ main {
     width: 1200px; height: 400px;
     padding: 50px;
     background-color: var(--cor);
-    border-radius: 25px;
+    border-radius: 10px;
     color: #ffffff;
     font-size: 1.5em;
 }
@@ -183,15 +197,20 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 380px; height: 300px;
+    width: 380px; height: 280px;
     padding: 25px;
     background-color: var(--cor);
-    border-radius: 25px;
+    border-radius: 10px;
     color: #ffffff;
     text-align: justify;
 }
+.cardMiniDireito h1{
+    text-align: center;
+    height: 50px;
+}
 .cardMiniDireito h3 {
     font-family: Montserrat-Regular, Arial, Helvetica, sans-serif;
+    font-size: 0.95em;
 }
 
 
@@ -210,7 +229,7 @@ main {
     padding: 0px;
     overflow: hidden;
     background-color: #387379;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 .informDrFran {
     display: flex;
@@ -251,7 +270,7 @@ main {
     align-items: center;
     width: 35px; height: 35px;
     background-color: #ffffff;
-    border-radius: 35px;
+    border-radius: 10px;
 }
 
 .wrapperRedeSocialFran img {
@@ -281,12 +300,15 @@ main {
     width: 270px; height: 500px;
     padding: 20px;
     background-color: var(--cor);
-    border-radius: 25px;
+    border-radius: 10px;
     color: #ffffff;
+}
+.cardPerfil:nth-child(1) .fotoPerfil img {
+    filter: grayscale(1);
 }
 .fotoPerfil img{
     width: 225px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .informPerfil {
     display: flex;
@@ -326,5 +348,5 @@ footer {
     padding: 50px;
     margin: 100px 0 30px 0;
     background-color: #9274ff;
-    border-radius: 25px;
+    border-radius: 10px;
 }
