@@ -34,6 +34,9 @@ html {
     src: url(../font/Poppins/Poppins-SemiBold.otf);
 }
 
+body {
+    background-color: #e6e4e4;
+}
 .conteudo-geral {
     display: grid;
     grid-template-rows: auto auto auto;
