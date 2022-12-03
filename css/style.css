@@ -57,7 +57,7 @@ header {
     align-items: center;
     width: 1200px; height: 60px;
     padding: 5px 50px;
-    background-color: #067876bd;
+    background-color: #6E7A93;
     border-radius: 10px;
 }
 .logo {
@@ -72,7 +72,7 @@ header {
 .logo span{
     font-family: Poppins-Black, Arial, Helvetica, sans-serif;
     font-size: 1.3em;
-    color: #fff;
+    color: #d4c2a2;
 }
 .listTopics {
     display: flex;
@@ -95,21 +95,37 @@ header {
     background-color: #F1D8BA50;
     color: #ffffff;
     cursor: pointer;
+    border-radius: 18px;
 }
 .wrapper-submenu {
     display: none;
 }
-.listTopics:nth-child(2) li:hover {
+li.multiMenu  {
+    width: 140px;
+}
+li.multiMenu:hover {
     border-radius: 18px 18px 0px 0px;
 }
 .listTopics li:hover .wrapper-submenu {
     display: block;
     position: absolute;
-    width: 140px;
-    margin-top: 25px;
-    background-color: #067876;
+    width: 140px; height: auto;
+    padding: 5px;
+    margin-top: 24px;
+    background-color: #98989F;
+    border-radius: 0 0 18px 18px;
 }
-
+.wrapper-submenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrapper-submenu li {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 3px 0;
+}
 
 
 
@@ -145,7 +161,7 @@ main {
     height: 500px;
 }
 .direitosBasicos>h1 {
-    color: #363636;
+    color: #20263a;
     font-family: Montserrat-SemiBold, Arial, Helvetica, sans-serif;
     font-size: 2.5em;
     margin: 50px 0 15px 0;
@@ -168,7 +184,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 600px;
+    width: 680px;
     text-align: left;
 }
 .imgDireito {
@@ -228,7 +244,7 @@ main {
     width: 1200px; height: 400px;
     padding: 0px;
     overflow: hidden;
-    background-color: #387379;
+    background-color: #6E7A93;
     border-radius: 10px;
 }
 .informDrFran {
@@ -253,10 +269,10 @@ main {
     font-size: 0.7em;
 }
 .redesSociaisFran span a {
-    color: #70B6C0;
+    color: #e0e0e0;
     text-decoration: none;
     font-size: 0.7em;
-    font-family: Montserrat-Medium, Arial, Helvetica, sans-serif;
+    font-family: Montserrat-SemiBold, Arial, Helvetica, sans-serif;
     margin-right: 15px;
     transition: .5s;
     cursor: pointer;
@@ -269,13 +285,17 @@ main {
     justify-content: center;
     align-items: center;
     width: 35px; height: 35px;
-    background-color: #ffffff;
-    border-radius: 10px;
+    background-color: #cccccc;
+    border-radius: 20px;
 }
 
 .wrapperRedeSocialFran img {
     width: 35px;
 }
+
+
+
+
 
 
 .quemSomos {
@@ -285,6 +305,7 @@ main {
     align-items: center;
     height: 500px;
 }
+
 .wrapperPerfils {
     display: flex;
     justify-content: space-between;
@@ -296,24 +317,44 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px ;
+    justify-content: space-between;
     width: 270px; height: 500px;
     padding: 20px;
     background-color: var(--cor);
     border-radius: 10px;
     color: #ffffff;
 }
-.cardPerfil:nth-child(1) .fotoPerfil img {
-    filter: grayscale(1);
+.fotoPerfil {
+    height: 225px;
+    border-radius: 10px;
+    background-image: var(--img);
+    background-size: 100%;
 }
 .fotoPerfil img{
     width: 225px;
     border-radius: 10px;
+    transition: .5s;
 }
+.fotoPerfil img:hover {
+    cursor: pointer;
+    filter: opacity(0);
+}
+
+
 .informPerfil {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    height: auto;
+}
+.informPerfil h1 {
+    height: 50px;
+}
+.informPerfil p:nth-child(2) {
+    height: 100px;
+}
+.informPerfil p:nth-child(3) {
+    height: 50px;
+    text-align: center;
 }
 .informPerfil p {
     font-family: Montserrat-Regular, Arial, Helvetica, sans-serif;
@@ -326,7 +367,7 @@ main {
     cursor: pointer;
 }
 .informPerfil span:hover a{
-    color: #340192;
+    color: #c58c7b;
 }
 .informPerfil span a {
     font-family: Montserrat-Medium, Arial, Helvetica, sans-serif;
@@ -338,15 +379,24 @@ main {
     width: 24px;    
 }
 
+
+
+
+
 footer {
     display: flex;
     justify-content: center;
 }
 .footerConteudo {
     display: flex;
-    width: 1200px; height: 500px;
-    padding: 50px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 1200px; height: 100px;
+    padding: 15px;
     margin: 100px 0 30px 0;
-    background-color: #9274ff;
+    background-color: #6E7A93;
     border-radius: 10px;
+}
+.footerConteudo span {
+    color: #ffffff;
 }
