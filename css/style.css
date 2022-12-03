@@ -44,6 +44,18 @@ body {
     background-color: #e6e4e4;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #c9c8c8;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #958E9A;    /* color of the scroll thumb */
+  }
+
 
 header {
     display: flex;
