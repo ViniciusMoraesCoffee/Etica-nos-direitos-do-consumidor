@@ -72,7 +72,7 @@ header {
     align-items: center;
     width: 1200px; height: 60px;
     padding: 5px 50px;
-    background-color: #6E7A93;
+    background-color: #806d61;
     border-radius: 10px;
 }
 .logo {
@@ -127,7 +127,7 @@ li.multiMenu:hover {
     width: 140px; height: auto;
     padding: 5px;
     margin-top: 24px;
-    background-color: #98989F;
+    background-color: #A48F7D;
     border-radius: 0 0 18px 18px;
 }
 .wrapper-submenu ul {
@@ -176,7 +176,7 @@ main {
     height: 500px;
 }
 .direitosBasicos>h1 {
-    color: #20263a;
+    color: #2c2c2c;
     font-family: Montserrat-SemiBold, Arial, Helvetica, sans-serif;
     font-size: 2.5em;
     margin: 50px 0 15px 0;
@@ -259,7 +259,7 @@ main {
     width: 1200px; height: 400px;
     padding: 0px;
     overflow: hidden;
-    background-color: #6E7A93;
+    background-color: #447777;
     border-radius: 10px;
 }
 .informDrFran {
@@ -300,12 +300,13 @@ main {
     justify-content: center;
     align-items: center;
     width: 35px; height: 35px;
-    background-color: #cccccc;
+    background-color: #ffffff;
     border-radius: 20px;
 }
 
 .wrapperRedeSocialFran img {
     width: 35px;
+    filter: grayscale(1);
 }
 
 
@@ -338,6 +339,7 @@ main {
     background-color: var(--cor);
     border-radius: 10px;
     color: #ffffff;
+    background-color: #806d61;
 }
 .fotoPerfil {
     height: 225px;
@@ -409,9 +411,23 @@ footer {
     width: 1200px; height: 100px;
     padding: 15px;
     margin: 100px 0 30px 0;
-    background-color: #6E7A93;
+    background-color: #447777;
     border-radius: 10px;
 }
 .footerConteudo span {
     color: #ffffff;
+}
+
+.btnRandon {
+    background-color: transparent;
+    margin: 0 25px;
+    font-size: 1em;
+    color: #4c8181;
+    cursor: pointer;
+}
+.btnRandon:hover {
+    color: #658b8b;
+}
+.btnRandon:active {
+    color: #c0c0c0;
 }
